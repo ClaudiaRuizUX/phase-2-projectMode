@@ -1,0 +1,21 @@
+{
+    "savedArticles": [
+      {
+        "title": "title1 lorem ipsum",
+        "link": "google.com",
+        "content": "lorem1 ipsum content here",
+        "id": 1
+      },
+      {
+        "title": "title2 lorem ipsum",
+        "link": "youtube.com",
+        "content": "lorem2 ipsum content here",
+        "id": 2
+      },{
+        "title": "title3 lorem ipsum",
+        "link": "twitter.com",
+        "content": "lorem3 ipsum content here",
+        "id": 3
+      },
+    ]
+  }
