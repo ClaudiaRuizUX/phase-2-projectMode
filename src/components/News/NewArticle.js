@@ -12,6 +12,7 @@ const NewArticle = ({item}) => (
             </div>
             <div className="card-action">
                 <a href={item.url} target="_blank" rel="noreferrer">Read Article</a>
+                <button onClick={this.saveArticle}>Save for Later</button>
                 <a href="/">Save for Later</a>
                 {/* <a href="/" onClick={props.passArticleDetails}>Save for Later</a> */}
             </div>

@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import News from './News/News'; 
-import SavedNews from './News/SavedNews';
+import SavedNewsList from './News/SavedNewsList';
 
 class App extends Component {
   constructor(props) {
@@ -33,8 +33,8 @@ class App extends Component {
             <News news={this.state.news2} />
           </div>
           <div className="col s4">
-            <h3>Saved for Laer</h3>
-            <SavedNews news={this.state.news2} />
+            <h3>Saved for Later</h3>
+            <SavedNewsList news={this.state.news2} />
           </div>
         </div>
       </div>
