@@ -4,7 +4,7 @@ import SavedArticle from './SavedArticle';
 import Error from './Error';
 
 
-class SavedNewsList extends Component {
+class SavedNews extends Component {
     constructor(props){
         super(props);
         this.state = {
@@ -56,5 +56,5 @@ class SavedNewsList extends Component {
     );
   }
 }
-export default SavedNewsList;
+export default SavedNews;
 
