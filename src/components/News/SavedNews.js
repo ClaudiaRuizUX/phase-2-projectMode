@@ -13,29 +13,16 @@ class SavedNews extends Component {
         };
     }
 
-  componentDidMount(){
-    const url=`https://newsapi.org/v2/${this.props.news.type}?${this.props.news.query}&apiKey=9a7f75898c5d4d319f49cf230b57ac39`;
+   getSavedNews() {
+     return fetch(`https://newsapi.org/v2/${this.props.news.type}?${this.props.news.query}&apiKey=9a7f75898c5d4d319f49cf230b57ac39`)
+     .then(res => res.json())
+     .then(data => data)
+   }
 
-    // axios.post(url, {
-    //   data: {
-    //     news: {
-    //       title: 'lorem title',
-    //       description: 'lorem descri'
-    //     }
-    //   }
-    // })
-    
-    axios.get(url)
-      .then((response) => {
-        this.setState({
-          sidenews: response.data.articles
-        })
-      })
-      .catch((error) => {
-        this.setState({
-          error: true
-        })
-      }); 
+  componentDidMount(){
+    this.getSavedNews().then(data => this.setState({
+      sidenews: data.articles
+    }))
   }
 
   renderItems() {
